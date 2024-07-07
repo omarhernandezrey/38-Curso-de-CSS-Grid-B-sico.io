@@ -1,15 +1,39 @@
+/* Estilo del contenedor principal */
 .contenedor {
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 150px 150px 150px;
-    grid-auto-rows: 150px;
-    grid-auto-flow: column;
-    height: 600px;
+    border: 5px solid #e1bee7; /* Borde sólido de 5px color púrpura claro */
+    background-color: white; /* Fondo blanco */
+    display: grid; /* Contenedor utiliza display grid */
+    grid-template-columns: 150px 150px 150px; /* Tres columnas de 150px */
+    grid-template-rows: 75px 75px 75px; /* Tres filas de 75px */
+    grid-template-areas: 
+        "header header header" /* Área para el encabezado, ocupando tres columnas */
+        "side main main" /* Área para el lateral y el contenido principal, ocupando dos columnas para el lateral y tres para el contenido principal */
+        "side main main"; /* Repetición del área del lateral y del contenido principal */
+    place-content: center; /* Contenido centrado dentro del contenedor */
 }
+
 /* Estilo de los elementos dentro del contenedor */
 .item {
-    border: 5px solid #00bcd4; /* Borde sólido de 5px color azul claro */
-    font-size: 4rem; /* Tamaño de fuente grande */
+    font-size: 4rem; /* Tamaño de fuente grande para todos los elementos */
+}
+
+/* Estilo específico para el elemento en el área del encabezado */
+.item-1 {
+    border: 5px solid #f8bbd0; /* Borde sólido de 5px color rosa */
+    background-color: #ffeeff; /* Fondo rosado muy claro */
+    grid-area: header; /* Asignación al área 'header' definida en el contenedor */
+}
+
+/* Estilo específico para el elemento en el área lateral */
+.item-2 {
+    border: 5px solid #e1bee7; /* Borde sólido de 5px color púrpura claro */
+    background-color: #fff1ff; /* Fondo blanco rosado */
+    grid-area: side; /* Asignación al área 'side' definida en el contenedor */
+}
+
+/* Estilo específico para el elemento en el área principal */
+.item-3 {
+    border: 5px solid #b2ebf2; /* Borde sólido de 5px color azul claro */
+    background-color: #e5ffff; /* Fondo azul muy claro */
+    grid-area: main; /* Asignación al área 'main' definida en el contenedor */
 }

@@ -1,14 +1,13 @@
-/* Estilo del contenedor principal */
 .contenedor {
-    border: 5px solid #e1bee7; /* Borde sólido de 5px color púrpura */
-    background-color: #fff1ff; /* Fondo blanco ligeramente rosado */
-    display: grid; /* Contenedor usa display grid */
-    grid-template-rows: 100px 200px; /* Filas explícitas: 100px y 200px */
-    grid-auto-columns: 100px; /* Columnas automáticas de 100px */
-    grid-auto-flow: column; /* Flujo automático de elementos en columnas */
-    gap: 20px; /* Espacio de 20px entre las celdas */
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    grid-auto-flow: column;
+    height: 600px;
 }
-
 /* Estilo de los elementos dentro del contenedor */
 .item {
     border: 5px solid #00bcd4; /* Borde sólido de 5px color azul claro */

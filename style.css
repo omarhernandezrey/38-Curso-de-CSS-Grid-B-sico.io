@@ -1,14 +1,8 @@
-.contenedor-1 {
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
+* {
+    font-family: "Roboto", sans-serif;
+}
 
-  .contenedor-2 {
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    display: grid;
-    margin-top: 100px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }  
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}

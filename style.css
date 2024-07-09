@@ -99,23 +99,51 @@ main {
     text-align: center;
     margin-bottom: 50px;
     font-size: 2rem;
+    animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .menu-grid {
     display: grid;
     gap: 25px;
     justify-content: center;
-    grid-template-columns: repeat(5,minmax(100px, 150px));
+    grid-template-columns: repeat(5, minmax(100px, 150px));
 }
 
 .menu-grid-item {
     background-color: coral;
     padding: 15px;
     border-top-left-radius: 70px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+}
+
+.menu-grid-item:hover {
+    transform: scale(1.2);
 }
 
 .menu-grid-item img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(1.2); /* Haciendo la imagen clara por defecto */
 }
+
+.menu-grid-item:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2); /* Manteniendo la imagen clara al pasar el puntero */
+}
+
+

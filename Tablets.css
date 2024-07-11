@@ -1,0 +1,24 @@
+/* Tablets */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    
+    .info-title {
+        font-size: 2rem;
+    }
+
+    .info-subtitle {
+        font-size: 1rem;
+    }
+
+    .dishes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+

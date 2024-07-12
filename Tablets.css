@@ -1,4 +1,14 @@
 /* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+  }
+}
+
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
@@ -22,3 +32,12 @@
     }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dishes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

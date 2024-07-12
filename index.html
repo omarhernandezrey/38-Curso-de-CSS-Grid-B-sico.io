@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Mobile.css">
     <link rel="stylesheet" href="Tablets.css">
-    <meta 
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-    >
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">Your Restaurant</a>
+        <ul class="navbar-menu">
+          <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="#" class="navbar-link">Menu</a></li>
+          <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <main>
       <section class="hero">
         <div class="info">
@@ -35,33 +43,48 @@
       </section>
 
       <section class="dishes">
-        <h2 class="dishes-title">Out services</h2>
+        <h2 class="dishes-title">Our Services</h2>
         <div class="dishes-grid">
-          <img
-            class="dishes-item dishes-item_big"
-            src="./images/video.png"
-            alt="mesa con platos de pasta"
-          />
-          <img
-            class="dishes-item"
-            src="./images/dish1.png"
-            alt="bowl de vegetales"
-          />
-          <img
-            class="dishes-item"
-            src="./images/dish2.png"
-            alt="bowl de vegetales"
-          />
-          <img
-            class="dishes-item"
-            src="./images/dish3.png"
-            alt="bowl de vegetales"
-          />
-          <img
-            class="dishes-item"
-            src="./images/dish4.png"
-            alt="bowl de vegetales"
-          />
+          <div class="dishes-item dishes-item_big">
+            <img src="./images/video.png" alt="mesa con platos de pasta" />
+            <h3 class="dishes-item-title">Spaghetti Special</h3>
+            <p class="dishes-item-description">
+              Spaghetti al dente con una mezcla de guisantes, zanahorias y maíz, cubierto con salsa roja casera.
+            </p>
+            <p class="dishes-item-price">$15.00</p>
+          </div>
+          <div class="dishes-item">
+            <img src="./images/dish1.png" alt="bowl de vegetales" />
+            <h3 class="dishes-item-title">Vegetable Bowl</h3>
+            <p class="dishes-item-description">
+              Una mezcla saludable de vegetales frescos para una experiencia ligera y nutritiva.
+            </p>
+            <p class="dishes-item-price">$10.00</p>
+          </div>
+          <div class="dishes-item">
+            <img src="./images/dish2.png" alt="bowl de vegetales" />
+            <h3 class="dishes-item-title">Grilled Veggies</h3>
+            <p class="dishes-item-description">
+              Vegetales a la parrilla con un toque de hierbas frescas y aceite de oliva.
+            </p>
+            <p class="dishes-item-price">$12.00</p>
+          </div>
+          <div class="dishes-item">
+            <img src="./images/dish3.png" alt="bowl de vegetales" />
+            <h3 class="dishes-item-title">Seasonal Salad</h3>
+            <p class="dishes-item-description">
+              Ensalada de temporada con ingredientes frescos y aderezo especial de la casa.
+            </p>
+            <p class="dishes-item-price">$8.00</p>
+          </div>
+          <div class="dishes-item">
+            <img src="./images/dish4.png" alt="bowl de vegetales" />
+            <h3 class="dishes-item-title">Fruit Bowl</h3>
+            <p class="dishes-item-description">
+              Un tazón de frutas frescas y jugosas para un dulce final de tu comida.
+            </p>
+            <p class="dishes-item-price">$7.00</p>
+          </div>
         </div>
       </section>
 
@@ -70,25 +93,56 @@
         <div class="menu-grid">
           <div class="menu-grid-item">
             <img src="./images/plate1.png" alt="Plato con salsa y vegetales">
+            <h3 class="menu-item-title">Plato 1</h3>
+            <p class="menu-item-price">$12.99</p>
           </div>
-
+      
           <div class="menu-grid-item">
             <img src="./images/plate2.png" alt="Plato con salsa y vegetales">
+            <h3 class="menu-item-title">Plato 2</h3>
+            <p class="menu-item-price">$10.99</p>
           </div>
-
+      
           <div class="menu-grid-item">
             <img src="./images/plate3.png" alt="Plato con salsa y vegetales">
+            <h3 class="menu-item-title">Plato 3</h3>
+            <p class="menu-item-price">$15.99</p>
+          </div>
+      
+          <div class="menu-grid-item">
+            <img src="./images/plate4.png" alt="Plato con salsa y vegetales">
+            <h3 class="menu-item-title">Plato 4</h3>
+            <p class="menu-item-price">$9.99</p>
+          </div>
+      
+          <div class="menu-grid-item">
+            <img src="./images/plate5.png" alt="Plato con salsa y vegetales">
+            <h3 class="menu-item-title">Plato 5</h3>
+            <p class="menu-item-price">$11.99</p>
+          </div>
         </div>
-
-        <div class="menu-grid-item">
-          <img src="./images/plate4.png" alt="Plato con salsa y vegetales">
-        </div>
-
-        <div class="menu-grid-item">
-          <img src="./images/plate5.png" alt="Plato con salsa y vegetales">
-        </div>
-
       </section>
-    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./images/logo.jpg" alt="Logo">
+        </div>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="./images/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="./images/gorjeo.png" alt="Twitter"></a>
+          <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

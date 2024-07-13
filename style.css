@@ -265,16 +265,6 @@ main {
     height: 50px;
 }
 
-.footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
 
 .footer-social {
     display: flex;
@@ -286,6 +276,16 @@ main {
     width: 30px;
 }
 
+.footer-social a span {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 5px;
+    text-decoration: none; /* Añadido para eliminar la línea debajo del ícono */
+}
+
+.footer-social a {
+    text-decoration: none; /* Asegura que los enlaces no tengan subrayado */
+}
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
